@@ -1,0 +1,13 @@
+{%extends 'index.html'%}
+{%block main%}
+<section class="upload-page-btn">
+    <a href="/">Home</a>
+</section>
+
+<div class="upload_form_container" >
+    <form class="upload_form"  action="/upload" method="POST" enctype = "multipart/form-data">
+        {{upload_form.file_upload()}} {{upload_form.submit()}}
+    </form>
+</div>
+<div class="msg_container" ><h4 color="yellow">{{msg}}</h4></div>
+{%endblock%}

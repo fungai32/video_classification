@@ -1,0 +1,43 @@
+{%extends 'base.html'%}
+{%block head%}
+{{super()}}
+    {%block title%}Index{%endblock%}
+{%endblock%}
+{%block body%}
+<main>
+    <h1>iVision Video<span>|</span> Search</h1>
+   
+    <article class="forms">
+        <div class="search_form_container" >
+            <form class="search_form" method="POST" enctype = "multipart/form-data">
+                {{search_form.obj_to_search()}} {{search_form.submit()}}
+            </form>    
+        </div>
+    </article>
+    {%block main%}
+    <section class="upload-page-btn">
+        <a href="/upload">Upload</a>
+    </section>
+    <section class="content">
+        <div>
+            <section class="sets-container">
+               {%for i in range(1,9)%}
+                <a href="/set_{{i+1}}" class="set-link">Set {{i+1}}</a>
+                {%endfor%}
+            </section>
+        </div>
+        <div class="video-grid-container">
+           {%for video_src in all_videos:%}
+            <div class="video-grid-item">
+                <a class="video_link">
+                    <video width="220" height="140" controls>
+                        <source src="{{video_src}}" type="video/mp4">
+                    </video>
+                </a>
+            </div>
+            {%endfor%}
+        </div>
+    </section>
+    {%endblock%}
+</main>
+{%endblock%}

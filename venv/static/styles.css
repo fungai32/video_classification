@@ -1,0 +1,117 @@
+body{
+    background:linear-gradient(45deg, #ea0000,navy);
+    color:#ffffff;
+}
+.forms{
+    position:relative;
+}
+.search_form_container{
+    position:absolute;
+    top:-55px;
+    right:50px;
+}
+.upload_form_container{
+    position:absolute;
+    top:160px;
+    right:400px;
+    background: url(./upload.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 550px;
+    height: 350px;
+}
+.upload_form{
+    position:relative;
+    padding-bottom: 500px;
+    height:500px;
+    overflow:hidden;
+}
+.search_form>#obj_to_search{
+    height:30px;
+    width:200px;
+    border-radius: 50px;
+    background-color: #f4f4f4;
+}
+.search_form>#submit{
+    height:30px;
+    border-radius: 50px;
+    margin-left: -50px;
+    width:100px;
+    background-color: navy;
+    color:#ffffff;
+}
+.search_form>#obj_to_search:hover{
+    width:300px;
+    border-radius: 50px;
+}
+.upload_form>#file_upload{
+    background-color: red;
+    padding-bottom: 330px;
+    width:550px;
+    opacity: 0;
+}
+.upload_form>#submit{
+    position:absolute;
+    width:600px;
+    margin-left:-600px;
+    margin-top:300px;
+    background-color: green;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:#ffffff;
+    box-shadow: 0 0 10px 0 #ffffff inset;
+}
+.msg_container{
+    position: absolute;
+    top:90px;
+    left:540px;
+    color:yellow;
+    text-transform: lowercase;
+}
+.upload-page-btn{
+    position:absolute;
+    top:140px;
+    left:55px;
+}
+.upload-page-btn>a{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: navy;
+}
+a{
+    text-decoration: none;
+    color:#ffffff;
+    background-color: 00cce9;
+    border-radius: 50px;
+    width:40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 10px;
+}
+.set-link{
+    background-color: #000000;
+    padding: 10px 20px 10px 20px;
+}
+.video-grid-container{
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto ;  /* auto auto auto;*/
+    margin-left: 70px;
+}
+.video-grid-item{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    margin-top:50px;
+}
+.sets-container{
+    display: flex;
+    flex-direction: column;
+    margin-top:50px;
+}
+.sets-container>a{
+    margin-left: 50px;
+}
+
